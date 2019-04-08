@@ -1,0 +1,8 @@
+.friends s {
+    display: grid;
+    grid-template-columns: 3px;
+    color: white;
+
+}
+
+
