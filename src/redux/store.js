@@ -43,7 +43,6 @@ let store = {
         console.log('State Changed')
     },
     getState() {
-
         return this._state
     },
     subscribe(observer) {

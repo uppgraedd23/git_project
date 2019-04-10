@@ -15,7 +15,9 @@ const App = (props) => {
         <div className='app-wrapper'>
             <Header/>
 
-            <Navbar friends={props.state.friends}/>
+            <Navbar />
+            {/*<Navbar friends={props.state.friends}/>*/}
+
 
             <div className='app-wrapper-content'>
                 <Route path="/Profile"
