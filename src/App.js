@@ -8,7 +8,6 @@ import News from "./components/News/News";
 import Music from "./components/Music/Music";
 import {Route} from "react-router-dom";
 import DialogsContainer from "./components/Dialogs/DialogsContainer";
-import Users from "./components/Users/Users";
 import UsersContainer from "./components/Users/UsersContainer";
 
 const App = (props) => {
