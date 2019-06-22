@@ -11,7 +11,6 @@ const MyPosts = (props) => {
 
     let onAddPost = () => {
         props.addPost();
-
     }
     let onPostChange = () => {
         let text = newPostElement.current.value;
