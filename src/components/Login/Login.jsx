@@ -1,5 +1,7 @@
 import React from 'react'
 import {Field, reduxForm} from "redux-form";
+import {connect} from "react-redux";
+import {getStatus, getUserProfileThunk, updateStatusThunk} from "../../redux/profile-reducer";
 
 
 const LoginForm = (props) => {
@@ -24,6 +26,7 @@ const LoginForm = (props) => {
 
 const LoginReduxForm = reduxForm({form: 'login'})(LoginForm)
 
+
 const Login = (props) => {
     const onSubmit = (formData) => {
         console.log(formData)
@@ -33,6 +36,11 @@ const Login = (props) => {
         <LoginReduxForm onSubmit={onSubmit}/>
     </div>
 }
+let mapStateToProps = (state) => ({
+    login: state.LoginForm.login,
+    password: state.LoginForm.password
+
+})
 
 
 export default Login;

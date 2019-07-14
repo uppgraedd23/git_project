@@ -30,6 +30,12 @@ export const usersAPI = {
     userAuth()   {
          return instance.get(`auth/me`)
     }
+    // userLogin()   {
+    //      return instance.post(`auth/login`)
+    // }
+    // userLogout()   {
+    //      return instance.post(`auth/logout`)
+    // }
 }
 export const profileAPI = {
 
