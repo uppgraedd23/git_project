@@ -2,6 +2,8 @@ import React from 'react'
 import {Field, reduxForm} from "redux-form";
 import {connect} from "react-redux";
 import {getStatus, getUserProfileThunk, updateStatusThunk} from "../../redux/profile-reducer";
+import {Input} from "../Common/FormControls/FormsControls";
+import {required} from "../../utils/validators/validators";
 
 
 const LoginForm = (props) => {
@@ -9,13 +11,13 @@ const LoginForm = (props) => {
     return (
         <form onSubmit={props.handleSubmit}>
             <div>
-                <Field placeholder={"login"} name={'login'} component={'input'}/>
+                <Field placeholder={"login"} name={'login'} component={Input} validate={[required]}/>
             </div>
             <div>
-                <Field placeholder={"Password"} name={'password'} component={'input'}/>
+                <Field placeholder={"Password"} name={'password'} component={Input} validate={[required]}/>
             </div>
             <div>
-                <Field component={'input'} name={'rememberMe'} type={"checkbox"}/> remember me
+                <Field component={Input} name={'rememberMe'} type={"checkbox"}/> remember me
             </div>
             <div>
                 <button>Login</button>
