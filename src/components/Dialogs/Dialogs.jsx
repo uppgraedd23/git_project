@@ -4,7 +4,7 @@ import DialogItem from "./DialogItem/DialogItem";
 import Message from "./Message/Message";
 import {Redirect} from "react-router-dom";
 import {Field, reduxForm} from "redux-form";
-import {Textarea} from "../Common/FormControls/FormsControls";
+import {Textarea} from "../Common/FormsControls/FormsControls";
 import {maxLengthCreator, required} from "../../utils/validators/validators";
 import AddMessageForm from "./AddMessageForm/AddMessageForm";
 
